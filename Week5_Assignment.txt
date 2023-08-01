@@ -1,0 +1,13 @@
+Create an Employee class with five fields: first name, last name, workID, yearStartedWked, and initSalary. It includes constructor(s) and properties to initialize values for all fields.
+
+Create an interface, SalaryCalculate, class that includes two functions: first,CalcYearWorked() function, it takes one parameter (currentyear) and calculates the number of year the worker has been working. The second function, CalcCurSalary() function that calculates the current year salary.
+
+Create a Worker classes that is derived from Employee and SalaryCalculate class.
+
+    In Worker class,it includes two field, nYearWked and curSalary, and constructor(s). It definesthe CalcYearWorked() function using (current year – yearStartedWked) and saveit in the nYearWked variable. It also defines the CalcCurSalary() function thatcalculates the current year salary by using initial salary with 3% yearlyincrement.
+
+Create a Manager class that is derived from Worker class.
+
+    In Manager class,it includes one field: yearPromo and constructor(s). Itincludes a CalcCurSalaryfunction that calculate the current year salary by overriding the base classfunction using initial salary with 5% yearly increment plus 10% bonus. Themanager’s salary calculates in two parts. It calculates as a worker before theyear promoted and as a manager after the promotion.
+
+Write an application that reads the workers and managers information from files (“worker.txt” and “manager.txt”) and then creates the dynamic arrays of objects. Prompt the user for current year and display the workers’ and managers’ current information in separate groups: first and last name, ID, the year he/she has been working, and current salary.
